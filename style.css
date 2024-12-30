@@ -1,0 +1,122 @@
+/* Estilo geral */
+body {
+    background-color: white;
+    color: rgb(15, 20, 25);
+    font-family: Arial, sans-serif;
+}
+
+/* Links da Navegação e Publicações */
+nav ul li a, .profile-nav a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+nav p a{
+    color: rgb(83, 100, 113); /* Cor do texto dos links */
+    text-decoration: none; /* Sem sublinhado por padrão */
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a:hover, .profile-nav a:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+    
+}
+.location-date{
+    display: flex;
+
+}
+.location-date li:hover{
+    text-decoration: underline;
+}
+/* Estatísticas */
+.stats {
+    display: flex; /* Usar flexbox para alinhar os itens em linha */
+    list-style-type: none; /* Remove os pontos da lista */
+}
+
+.stats li {
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.stats span {
+    color: rgb(15, 20, 25); /* Cor dos números */
+    font-weight: bold; /* Números em negrito */
+}
+
+.stats a {
+    color: rgb(83, 100, 113); /* Cor do texto dos links */
+    text-decoration: none; /* Sem sublinhado por padrão */
+}
+
+.stats a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+/* Ações */
+.actions a {
+    color: rgb(83, 100, 113);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.actions a:hover {
+    color: rgba(29, 155, 240, 1); /* Default for Reply & Share */
+}
+
+.actions a.reply:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.actions a.retzeet:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+}
+
+.actions a.like:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
+/* Estilo do usuário */
+h4 {
+    color: rgb(15, 20, 25);
+}
+
+h5 {
+    color: rgb(83, 100, 113);
+}
+
+p.biography {
+    color: rgb(15, 20, 25);
+}
+
+ul.location-date li {
+    color: rgb(83, 100, 113);
+    list-style-type: none;
+}
+
+/* Conteúdo dos Tzeets */
+.posts article {
+    padding: 10px;
+}
+
+.posts article:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.posts article p:first-child,
+.posts article p:first-child + p {
+    color: rgb(15, 20, 25);
+}
+
+.posts article p:first-child + p + p {
+    color: rgb(83, 100, 113); /* Data do tzeet */
+}
+
