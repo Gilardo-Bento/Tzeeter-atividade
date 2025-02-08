@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="/Tzeeter-atividade/Css/Signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Criar conta</h2>
+            <button class="close-button"><i class="fas fa-times"></i></button>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="text" id="nome" placeholder="Nome:">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email:">
+            </div>
+            <div class="form-group">
+                <input type="password" id="senha" placeholder="Senha:">
+            </div>
+            <div class="form-group">
+                <input type="password" id="confirmacao-senha" placeholder="Confirmação da senha">
+            </div>
+            <div class="form-group">
+                <label>Data de nascimento</label>
+                <p class="info-text">Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</p>
+                <div class="date-selectors">
+                    <select id="mes">
+                        <option>Mês</option>
+                    </select>
+                    <select id="dia">
+                        <option>Dia</option>
+                    </select>
+                    <select id="ano">
+                        <option>Ano</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="receber-emails">Receba e-mails sobre sua atividade no Twitter e recomendações.</label>
+                <input type="checkbox" id="receber-emails">
+            </div>
+            <div class="form-group">
+                <p class="info-text">Você concorda com nossos Termos, com a Política de Privacidade e com o Uso de Cookies?</p>
+                <div class="radio-buttons">
+                    <label>
+                        <input type="radio" name="terms" value="sim"> Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="terms" value="nao"> Não
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Se inscrever</button>
+        </form>
+    </div>
+    <script src="/Tzeeter-atividade/Js/Signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    background-color: #4B5563;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.form-header h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: medium;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: #f7fafc;
+    font-size: 0.875rem;
+    margin-bottom: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3182ce;
+    outline: none;
+}
+
+.info-text {
+    color: #718096;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+}
+
+.date-selectors {
+    display: flex;
+    gap: 8px;
+}
+
+.date-selectors select {
+    flex: 1;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.radio-buttons label {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3182ce;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: medium;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #2b6cb0;
+}
