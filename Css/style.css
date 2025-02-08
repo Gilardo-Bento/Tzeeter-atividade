@@ -1,11 +1,10 @@
-/* Reset de margin e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+
 body {
     font-family: Arial, sans-serif;
     background-color: white;
@@ -16,32 +15,26 @@ body {
     color: rgb(15, 20, 25);
 }
 
-/* Container geral */
 .container {
     display: flex;
     width: 90%;
     max-width: 1200px;
     min-height: 100vh;
     flex-wrap: wrap;
-    /* Permite que as colunas se ajustem em telas menores */
     gap: 20px;
 }
 
-/* Coluna da esquerda */
 .left-column {
     flex: 1 1 200px;
     max-width: 300px;
     padding: 20px;
 }
 
-/* Logo do Tzeeter */
 .tzeeter-logo img {
     width: 20%;
     margin-bottom: 0;
 }
 
-/* Navegação */
-/* Estilo para a navegação */
 nav ul {
     list-style: none;
     padding: 0;

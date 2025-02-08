@@ -106,3 +106,19 @@ body {
 .submit-button:hover {
     background-color: #2b6cb0;
 }
+
+/* Adicionar borda vermelha aos campos com erro */
+.input-error {
+    border: 2px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.error-message.active {
+    display: block;
+}
+
