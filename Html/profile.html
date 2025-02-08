@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Tzeeter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/Tzeeter-atividade/Css/style.css">
+    <link rel="stylesheet" href="/Tzeeter-atividade/Css/cores.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="left-column">
+            <div class="tzeeter-logo">
+                <img src="/Tzeeter-atividade/Image/tiziu.png" alt="Logotipo do Tzeeter">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="/Tzeeter-atividade/Html/index.html"><i class="bi bi-house"></i> Home</a></li>
+                    <li><a href="#"><i class="bi bi-hash"></i> Explore</a></li>
+                    <li><a href="#"><i class="bi bi-bell"></i> Notifications</a></li>
+                    <li><a href="#"><i class="bi bi-envelope"></i> Messages</a></li>
+                    <li><a href="/Tzeeter-atividade/Html/profile.html"><i class="bi bi-person"></i> Profile</a></li>
+                    <li><a href="#"><i class="bi bi-three-dots"></i> More</a></li>
+                </ul>
+            </nav>
+
+            <button id="open-modal" class="post-button">
+                <i class="bi bi-chat"></i>
+                <span class="button-text">Tweet</span>
+            </button>
+
+        </aside>
+
+        <main class="main-column">
+            <section class="profile-header">
+                <img src="/Tzeeter-atividade/Image/IMG_20220606_195020_109.jpg" lt="Foto do usuário">
+                <div class="button-container">
+                    <button class="edit-profile-button">Edit Profile</button>
+                </div>
+                <h4>Gilardo Bento</h4>
+                <h5>@gilardobento </h5>
+                <p class="biography"> Information Systems Student @ Federal
+                    University of Ceará</p>
+
+                <ul class="location-date">
+                    <li><i class="bi bi-geo-alt"></i> Quixadá </li>
+                    <li><i class="bi bi-calendar"></i> Joined January 2021</li>
+                </ul>
+
+                <ul class="stats">
+                    <li><span>96</span> <a href="#">following</a></li>
+                    <li><span>79</span> <a href="#">followers</a></li>
+                </ul>
+            </section>
+
+            <nav class="profile-nav">
+                <ul>
+                    <li><a href="#">Tzeets</a></li>
+                    <li><a href="#">Tzeets & replies</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Links</a></li>
+                </ul>
+            </nav>
+
+            <section class="posts">
+                <article>
+                    <p class="author">Atila Iamarino</p>
+                    <p class="date">@oatila Oct 21, 2021</p>
+                    <p class="content">Se vai furar orçamento, dá pra voltar a financiar absorventes e a ciência? Ou só
+                        voto mesmo?</p>
+                    <ul class="actions">
+                        <li><a href="#" class="reply"><i class="bi bi-chat"></i> 200</a></li>
+                        <li><a href="#" class="retweet"><i class="bi bi-arrow-repeat"></i> 100</a></li>
+                        <li><a href="#" class="like"><i class="bi bi-heart"></i> 120</a></li>
+                        <li><a href="#" class="share"><i class="bi bi-upload"></i></a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <p class="author">Gilardo Bento</p>
+                    <p class="date">@gilardobento Jun 1, 2011</p>
+                    <p class="content">Something really bad is happening in somewhere in the world... Gmail is off</p>
+                    <ul class="actions">
+                        <li><a href="#" class="reply"><i class="bi bi-chat"></i> 200</a></li>
+                        <li><a href="#" class="retweet"><i class="bi bi-arrow-repeat"></i> 100</a></li>
+                        <li><a href="#" class="like"><i class="bi bi-heart"></i> 120</a></li>
+                        <li><a href="#" class="share"><i class="bi bi-upload"></i></a></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+        <aside class="right-column">
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="suggestions">
+                <h3>Talvez você curta</h3>
+                <ul>
+                    <li>
+                        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2275847-avatar-masculino-perfil-icone-de-homem-caucasiano-sorridente-vetor.jpg"
+                            alt="Foto do perfil">
+                        <div class="profile-info">
+                            <a href="#">Carlos</a>
+                            <button class="follow-button">Seguir</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRhT0cbiGi1rv3Gc5NhHT35FpGC58RPxkYw&s"
+                            alt="Foto do perfil">
+                        <div class="profile-info">
+                            <a href="#">Maria</a>
+                            <button class="follow-button">Seguir</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5419157-avatar-perfil-usuario-feminino-e-mulher-um-personagem-para-um-protetor-de-tela-com-emocoes-ilustracao-em-um-fundo-branco-isolado-vetor.jpg"
+                            alt="Foto do perfil">
+                        <div class="profile-info">
+                            <a href="#">Ana</a>
+                            <button class="follow-button">Seguir</button>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="more-suggestions">Mostrar mais</a>
+            </div>
+        </aside>
+
+    </div>
+    <!-- Modal de envio de Tzeet -->
+    <dialog id="tzeet-modal">
+        <div class="tweet-form">
+            <!-- Foto -->
+            <button onclick="closeModal()" class="close-button"> 
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="user-photo">
+                <img src="/Tzeeter-atividade/Image/IMG_20220606_195020_109.jpg" alt="Foto do usuário" />
+            </div>
+
+            <!-- Área do formulário -->
+            <div class="form-content">
+                <!-- Área de entrada -->
+                <textarea id="tweet-input-modal" class="tweet-input" placeholder="O que você está pensando"></textarea>
+
+                <!-- Configuração do reply -->
+                <a href="#" class="reply-link">
+                    <i class="bi bi-globe2"></i>
+                    Everyone can reply
+                </a>
+
+                <!-- Multimídia -->
+                <div class="media-icons">
+                    <a href="#" class="bi bi-card-image"></a>
+                    <a href="#" class="bi bi-filetype-gif"></a>
+                    <a href="#" class="bi bi-emoji-smile"></a>
+                    <a href="#" class="bi bi-bar-chart"></a>
+                    <a href="#" class="bi bi-calendar-event"></a>
+                    <a href="#" class="bi bi-geo-alt"></a>
+                </div>
+
+                <!-- Status e Envio -->
+                <div class="status-send">
+                    <span id="character-counter" class="character-counter" style="display: none;"></span>
+                    <span class="separator">|</span>
+                    <a href="#" class="bi bi-plus-circle"></a>
+                    <button id="send-button" class="send-button" disabled>Enviar</button>
+                </div>
+            </div>
+    </dialog>
+    
+
+    <script src="/Tzeeter-atividade/JS/script.js"></script>
+</body>
+
+</html>

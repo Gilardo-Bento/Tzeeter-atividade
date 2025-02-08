@@ -1,0 +1,235 @@
+/* Estilo geral do formulário */
+.tweet-form {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Foto do usuário */
+.user-photo img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+/* Conteúdo do formulário */
+.form-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Área de entrada */
+.tweet-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+.tweet-input:focus {
+    border-color: rgba(29, 155, 240, 0.7);
+    box-shadow: 0 0 4px rgba(29, 155, 240, 0.4);
+}
+
+/* Configuração do reply */
+.reply-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.reply-link:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+/* Multimídia */
+.media-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.media-icons a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-decoration: none;
+    color: #14171a;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.media-icons a:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+/* Status e envio */
+.status-send {
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+
+.character-counter {
+    font-size: 14px;
+    display: none;
+}
+
+.character-counter.warning {
+    color: rgb(255, 200, 0);
+}
+
+.character-counter.error {
+    color: rgb(255, 0, 0);
+}
+
+.separator {
+    color: #657786;
+}
+
+.add-tweet {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #14171a;
+    font-size: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.add-tweet:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: rgb(29, 155, 240);
+    color: #fff;
+    margin: right;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.send-button:disabled {
+    background-color: #aab8c2;
+    cursor: not-allowed;
+}
+
+#tzeet-modal {
+    width: 30%; /* Largura do modal */
+    max-width: 400px; /* Largura máxima */
+    border: none; /* Remove borda padrão */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do modal */
+    background-color: #fff; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    position: fixed; /* Fixa o modal na tela */
+    top: 27%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
+    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+}
+/* Fundo escurecido para o modal (opcional) */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+    z-index: 999; /* Fica abaixo do modal mas acima do conteúdo principal */
+}
+
+.close-button {
+    position: relative; /* Posiciona o botão no canto superior direito */
+    top: 0%; /* Distância do topo */
+    left: 0%; /* Distância da borda direita */
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    font-size: 20px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de ponteiro */
+    width: 40px; /* Tamanho do botão */
+    height: 20px; /* Tamanho do botão */
+    padding: 0; /* Remove qualquer padding */
+}
+/* Ajustes para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+    .tweet-form {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .user-photo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .tweet-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #tzeet-modal {
+        width: 90%;
+        top: 20%;
+        padding: 15px;
+    }
+}
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .tweet-form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .media-icons {
+        justify-content: center;
+    }
+
+    .send-button {
+        font-size: 16px;
+    }
+}
+
+/* Ajustes para telas grandes (monitores maiores) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .tweet-form {
+        max-width: 600px;
+        margin: auto;
+    }
+}
